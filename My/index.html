@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhilesh V - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom CSS for the portfolio */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar {
+            padding: 15px 0;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+        }
+
+        #about img {
+            width: 100%;
+            height: auto;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        #skills .fa {
+            color: #3498db;
+            cursor: pointer;
+        }
+
+        #advanced-java .fa {
+            color: #007bff; /* Change this to your preferred color */
+            cursor: pointer;
+        }
+
+        h2.text-center {
+            margin-bottom: 40px;
+        }
+
+        h4 {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            display: none; /* Hide initially */
+        }
+
+        /* Certifications Section */
+        .certifications {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .certifications:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .certifications ul {
+            display: none; /* Hide initially */
+        }
+
+        .certifications .show {
+            display: block; /* Show when toggled */
+        }
+
+        footer {
+            background-color: #222;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">AKHILESH-V</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#advanced-java">Advanced Java</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero bg-primary text-white text-center" id="hero">
+    <div class="container">
+        <h1 class="display-4">Hi, I'm Akhilesh V</h1>
+        <p class="lead">Java Developer Intern @ Qspider | Building Strong Foundations | Open to Full-time Roles</p>
+        <!-- Social Links -->
+        <div class="social-icons mt-4">
+            <a href="https://github.com/Akhileshhv" target="_blank" class="text-white mx-2" title="GitHub">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/akhilesh-v" target="_blank" class="text-white mx-2" title="LinkedIn">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://leetcode.com/u/AKHILESH-V" target="_blank" class="text-white mx-2" title="LeetCode">
+                <i class="fab fa-leanpub fa-2x"></i> <!-- Using Leanpub as a coding icon -->
+            </a>
+        </div>
+        <a href="#about" class="btn btn-outline-light btn-lg mt-4">Learn More</a><br><br>
+        <a href="AKHILESH-V.pdf" class="download-btn mt-4" download="AkhileshV_Resume">
+            <i class="fas fa-file-download"></i> Download Resume
+        </a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5"></section>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-5 text-center">
+                <img src="MyPic.jpg" alt="Akhilesh" class="img-fluid rounded-circle mb-4 about-img">
+            </div>
+            <div class="col-md-7">
+                <h2 class="section-title">About Me</h2>
+                <p class="about-text">
+                    I am an enthusiastic and driven individual, currently serving as an NSS Volunteer in college, where I engage in community service projects aimed at improving lives and fostering social awareness. As an active member of HOPE, a community organization dedicated to supporting the underprivileged through charity and outreach, I have developed a deep passion for social impact and leadership. Alongside my community involvement, I am a two-time state boxing champion, which has instilled in me discipline, perseverance, and the ability to overcome challenges. Currently, I am pursuing an internship at QSpiders, where I am eager to apply my foundational coding skills, learn from experienced teams, and contribute to impactful solutions in software development. Committed to personal growth and professional development, I am excited to kickstart my career in a supportive and innovative environment.
+                </p>
+                <a href="AKHILESH-V.pdf" class="btn btn-primary mt-4" download="AkhileshV_Resume">Download Resume</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center">Skills</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-code fa-3x mb-3" onclick="toggleSkills('core-java')"></i>
+                <h4>Core Java</h4>
+                <ul id="core-java">
+                    <li>Good understanding of OOP, Inheritance, Polymorphism, and Collections.</li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-database fa-3x mb-3" onclick="toggleSkills('sql')"></i>
+                <h4>SQL</h4>
+                <ul id="sql">
+                    <li>Extensive knowledge in SQL queries, Joins, Sub-queries, and CRUD operations.</li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-globe fa-3x mb-3" onclick="toggleSkills('web-tech')"></i>
+                <h4>Web Technologies</h4>
+                <ul id="web-tech">
+                    <li>Proficient in HTML, CSS, JavaScript, and web frameworks.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Advanced Java Section -->
+<section id="advanced-java" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Advanced Java Skills</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-database fa-3x mb-3" title="JDBC" onclick="toggleAdvanced('jdbc')"></i>
+                <h4>JDBC</h4>
+                <ul id="jdbc">
+                    <li>Proficient in using JDBC for database connectivity and operations.</li>
+                    <li>Hands-on experience with executing SQL queries using JDBC.</li>
+                    <li>Strong understanding of JDBC API, including Connection, Statement, PreparedStatement, and ResultSet interfaces.</li>
+                    <li>Experience in managing database connections.</li>
+                    <li>Familiar with various JDBC drivers and their configurations.</li>
+                    <li>Practiced JDBC in real-world scenarios using Java version 19 in Eclipse.</li>
+                    <li>Extensive experience working with MySQL databases using MySQL Workbench for designing, managing, and interacting with databases.</li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-sync-alt fa-3x mb-3" title="Hibernate" onclick="toggleSkills('hibernate')"></i>
+                <h4>Hibernate</h4>
+                <ul id="hibernate">
+                    <li>Proficient in using Hibernate for Object-Relational Mapping (ORM) in Java applications.</li>
+                    <li>Hands-on experience with configuring Hibernate and creating mappings between Java classes and database tables.</li>
+                    <li>Experience in managing database transactions and session management using Hibernate.</li>
+                    <li>Familiar with various Hibernate annotations and XML-based configurations.</li>
+                    <li>Practiced integrating Hibernate with Java applications using Java version 19 in Eclipse.</li>
+                    <li>Extensive experience working with MySQL databases using Hibernate for designing, managing, and interacting with relational data.</li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-leaf fa-3x mb-3" title="spring-boot" onclick="toggleSkills('spring-boot')"></i>
+                <h4>Spring Boot</h4>
+                <ul id="spring-boot">
+                    <li>Proficient in developing RESTful services and web applications using Spring Boot.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Certifications Section -->
+<section id="certifications" class="bg-light py-9">
+    <div class="container certifications">
+        <h2 class="text-center mb-4">Training and Certifications</h2>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="row">
+
+                    <!-- React & Node.js Workshop -->
+                    <div class="col-md-2 col-6 mb-4">
+                        <div class="cert-card" onclick="toggleCertifications('react-cert')">
+                            <img src="r.png" alt="React & Node.js Workshop" class="img-fluid cert-icon" title="React & Node.js">
+                            <div class="cert-info" id="react-cert">
+                                <p>Participation in workshop on "React and Node.js".</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accenture Certification -->
+                    <div class="col-md-2 col-6 mb-4">
+                        <div class="cert-card" onclick="toggleCertifications('accenture-cert')">
+                            <img src="a.png" alt="Accenture Certification" class="img-fluid cert-icon" title="Accenture">
+                            <div class="cert-info" id="accenture-cert">
+                                <p>Participation in 
+                                    Accenture Innovation Challenge 2023 organized by Accenture.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Google AI Certification -->
+                    <div class="col-md-2 col-6 mb-4">
+                        <div class="cert-card" onclick="toggleCertifications('google-cert')">
+                            <img src="g.png" alt="Google AI Certification" class="img-fluid cert-icon" title="Google AI">
+                            <div class="cert-info" id="google-cert">
+                                <p>Tech Labs initiative generate AI with Google Cloud.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Infosys Python Certification -->
+                    <div class="col-md-2 col-6 mb-4">
+                        <div class="cert-card" onclick="toggleCertifications('infosys-cert')">
+                            <img src="in.png" alt="Infosys Certification" class="img-fluid cert-icon" title="Infosys Python">
+                            <div class="cert-info" id="infosys-cert">
+                                <p>Infosys completion for introduction to Python.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                    
+                    <!-- Full-Stack Development Internship -->
+                    <div class="col-md-2 col-6 mb-4">
+                        <div class="cert-card" onclick="toggleCertifications('internship-cert')">
+                            <img src="q.jpg" alt="Full-Stack Development Internship" class="img-fluid cert-icon" title="Full-Stack Development">
+                            <div class="cert-info" id="internship-cert">
+                                <p>Full-Stack Development Certification 
+                                    with hands-on internship experience at Qspiders.</p><br><br>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- TCS YEP Training -->
+                    <div class="col-md-2 col-6 mb-4">
+                        <div class="cert-card" onclick="toggleCertifications('tcs-cert')">
+                            <img src="t.png" alt="TCS Certification" class="img-fluid cert-icon" title="TCS YEP">
+                            <div class="cert-info" id="tcs-cert">
+                                <p>TCS YEP training.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CSS Styles -->
+<style>
+    .cert-icon {
+        width: 80px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .cert-card {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 15px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        position: relative;
+    }
+    .cert-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .cert-info {
+        display: none; /* Hide by default */
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(255, 255, 255, 0.9);
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        white-space: nowrap;
+    }
+    .cert-card:hover .cert-info {
+        display: block; /* Show on hover */
+    }
+</style>
+
+<!-- JavaScript for Toggle Effect -->
+<script>
+    function toggleCertifications(certId) {
+        const certInfo = document.getElementById(certId);
+        certInfo.style.display = certInfo.style.display === "block" ? "none" : "block";
+    }
+</script>
+
+
+<!-- Projects Section -->
+<section id="projects" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row">
+            <!-- Hospital Management System -->
+            <div class="col-md-4">
+                <div class="project-card">
+                    <h4 class="project-title">Hospital Management System</h4>
+                    <p class="project-description">
+                        Created a user-friendly interface and robust backend using Java, streamlining workflows for hospital staff.
+                        Implemented MySQL/PostgreSQL and JDBC for managing patient records and staff information.
+                    </p>
+                    <ul class="project-features">
+                        <li>Utilized Spring and Hibernate for efficient data handling</li>
+                        <li>Version control with Git</li>
+                        <li>Thorough testing with JUnit</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Car Rental System -->
+            <div class="col-md-4">
+                <div class="project-card">
+                    <h4 class="project-title">Car Rental System</h4>
+                    <p class="project-description">
+                        Developed a Car Rental System that effectively utilizes Object-Oriented Programming (OOP) concepts to create a maintainable and scalable application.
+                    </p>
+                    <ul class="project-features">
+                        <li>Seamless experience for end-users and administrators</li>
+                        <li>Code reusability and maintainability</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Google Clone -->
+            <div class="col-md-4">
+                <div class="project-card">
+                    <h4 class="project-title">Google Clone</h4>
+                    <p class="project-description">
+                        Developed a fully functional Google clone using HTML, CSS, and JavaScript, showcasing front-end technologies effectively.
+                    </p>
+                    <ul class="project-features">
+                        <li>User-friendly interface with responsive design</li>
+                        <li>Integrated search functionality</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- EyeArt: Digital Art Authentication and Marketplace -->
+            <div class="col-md-4">
+                <div class="project-card">
+                    <h4 class="project-title">EyeArt: Digital Art Authentication</h4>
+                    <p class="project-description">
+                        Leveraged deep learning with a Convolutional Neural Network (CNN) algorithm to detect counterfeit artwork, integrating user-friendly features.
+                    </p>
+                    <ul class="project-features">
+                        <li>Interactive features: liking, commenting, and rating</li>
+                        <li>Secure transactions for buying and selling art</li>
+                    </ul>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+</section>
+
+<!-- CSS Styles -->
+<style>
+    .bg-light {
+        background-color: #f8f9fa;
+    }
+    .project-card {
+        background: white;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 15px 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+    .project-card:hover {
+        transform: scale(1.05);
+    }
+    .project-title {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    .project-description {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+        color: #555;
+    }
+    .project-features {
+        list-style-type: none;
+        padding: 0;
+    }
+    .project-features li {
+        background: #e9ecef;
+        padding: 5px 10px;
+        border-radius: 4px;
+        margin: 5px 0;
+        font-size: 0.85rem;
+    }
+</style>
+
+
+<!-- Contact Section -->
+<section id="contact" class="bg-dark text-white py-5">
+    <div class="container">
+        <h2 class="text-center">Contact Me</h2>
+        <form action="/send-message" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <!-- Social Links in Footer -->
+        <div class="social-icons mb-3">
+            <a href="https://github.com/Akhileshhv" target="_blank" class="text-white mx-2" title="GitHub">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/akhilesh-v" target="_blank" class="text-white mx-2" title="LinkedIn">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://leetcode.com/u/AKHILESH-V" target="_blank" class="text-white mx-2" title="LeetCode">
+                <i class="fab fa-leanpub fa-2x"></i> <!-- Using Leanpub as a coding icon -->
+            </a>
+        </div>
+        <p>&copy; 2024 Akhilesh V. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Link to the JavaScript file -->
+<script src="js/script.js"></script>
+
+<script>
+    // Toggle Skills visibility
+    function toggleSkills(skillId) {
+        const skillList = document.getElementById(skillId);
+        skillList.style.display = skillList.style.display === 'none' || skillList.style.display === '' ? 'block' : 'none';
+    }
+
+    // Toggle Advanced Java visibility
+    function toggleAdvanced(advancedId) {
+        const advancedList = document.getElementById(advancedId);
+        advancedList.style.display = advancedList.style.display === 'none' || advancedList.style.display === '' ? 'block' : 'none';
+    }
+
+    // Toggle Certifications visibility
+    function toggleCertifications(certId) {
+        const certInfo = document.getElementById(certId);
+        certInfo.classList.toggle('show');
+    }
+</script>
+</body>
+</html>
